@@ -1,0 +1,11 @@
+{
+  "name": "location-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ederson Machado <edersonmberti@gmail.com> (https://www.linkedin.com/in/ederson-machado-b973a0125/)",
+  "license": "MIT"
+}
