@@ -1,32 +1,30 @@
 const mongoose = require("mongoose");
+const mongoosePaginate = require("mongoose-paginate");
 const { Schema } = mongoose;
-
-const PointSchema = require("../utils/PointSchema");
 
 const CitySchema = new Schema(
   {
-    id: {
-      type: number,
-      required: true,
-    },
     name: {
       type: String,
       required: true,
     },
-    prefix: {
-      type: String,
+    longitude: {
+      type: Number,
       required: true,
     },
-    coords: {
-      type: PointSchema,
-      index: "2dsphere",
+    latitude: {
+      type: Number,
+      required: true,
     },
     state: {
       type: Schema.Types.ObjectId,
+      required: true,
       ref: "State",
     },
   },
   { timestamps: true }
 );
+
+CitySchema.plugin(mongoosePaginate);
 
 module.exports = mongoose.model("City", CitySchema);
