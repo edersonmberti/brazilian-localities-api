@@ -7,4 +7,7 @@ router.get("/", (req, res) =>
   })
 );
 
+router.use("/states", require("./StateRoute"));
+router.use("/cities", require("./CityRoute"));
+
 module.exports = router;
