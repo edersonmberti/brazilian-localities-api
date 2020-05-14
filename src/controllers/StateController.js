@@ -1,7 +1,10 @@
 const State = require("../models/StateModel");
 
 exports.show = async (request, response) => {
-  const { page = 1, limit = 27 } = request.query;
+  let { page = 1, limit = 27 } = request.query;
+
+  page = parseInt(page);
+  limit = parseInt(limit);
 
   const states = await State.paginate(
     {},
