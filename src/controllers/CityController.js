@@ -2,7 +2,7 @@ const State = require("../models/StateModel");
 const City = require("../models/CityModel");
 
 exports.index = async (request, response) => {
-  let { page, limit, id } = request.query;
+  let { page = 1, limit = 20, id = 43 } = request.query;
 
   page = parseInt(page);
   limit = parseInt(limit);
