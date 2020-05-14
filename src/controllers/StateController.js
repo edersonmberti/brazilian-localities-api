@@ -18,7 +18,9 @@ exports.show = async (request, response) => {
 exports.index = async (request, response) => {
   const { id } = request.params;
 
-  const state = await State.findOne({ id });
+  const state = await State.findOne({ id }).select(
+    "-cities -createdAt -updatedAt -__v -_id"
+  );
 
   response.status(200).send({ state });
 };
