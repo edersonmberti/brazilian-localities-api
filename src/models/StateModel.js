@@ -1,26 +1,33 @@
 const mongoose = require("mongoose");
+const mongoosePaginate = require("mongoose-paginate");
 const { Schema } = mongoose;
 
 const StateSchema = new Schema(
   {
     id: {
-      type: number,
+      type: Number,
       required: true,
     },
     name: {
       type: String,
       required: true,
     },
-    prefix: {
+    uf: {
       type: String,
       required: true,
     },
-    region: {
-      type: Schema.Types.ObjectId,
-      ref: "Region",
+    longitude: {
+      type: Number,
+      required: true,
+    },
+    latitude: {
+      type: Number,
+      required: true,
     },
   },
   { timestamps: true }
 );
+
+StateSchema.plugin(mongoosePaginate);
 
 module.exports = mongoose.model("State", StateSchema);
