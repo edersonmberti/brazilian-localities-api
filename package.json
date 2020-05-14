@@ -1,12 +1,20 @@
 {
-  "name": "location-api",
+  "name": "brazilian-municipalities-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Rest API developed to provide the name and location of Brazilian states and cities in an easy way.",
+  "main": "./src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.js",
     "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edersonmberti/brazilian-municipalities-api.git"
+  },
+  "homepage": "https://github.com/edersonmberti/brazilian-municipalities-api#readme",
+  "bugs": {
+    "url": "https://github.com/edersonmberti/brazilian-municipalities-api/issues"
   },
   "author": "Ederson Machado <edersonmberti@gmail.com> (https://www.linkedin.com/in/ederson-machado-b973a0125/)",
   "license": "MIT",
@@ -20,5 +28,17 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
-  }
+  },
+  "keywords": [
+    "js",
+    "brasil",
+    "brazil",
+    "cidades",
+    "cidade",
+    "municipios",
+    "localização",
+    "api",
+    "latitude",
+    "longitude"
+  ]
 }
