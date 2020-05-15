@@ -1,7 +1,7 @@
 # Brazilian Localities API
 Inspired by [Municipios-Brasileiros](https://github.com/kelvins/Municipios-Brasileiros) and [IBGE API](https://servicodados.ibge.gov.br/api/docs/localidades?versao=1).
 
-Rest API developed to provide the name and location of Brazilian states and cities in an easy way with pagination option.
+Rest API developed to provide name and location of Brazilian states and cities in an easy way with pagination option.
 
 ## Documentation 
 

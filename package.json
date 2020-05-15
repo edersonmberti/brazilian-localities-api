@@ -1,7 +1,7 @@
 {
   "name": "brazilian-localities-api",
   "version": "1.0.0",
-  "description": "Rest API developed to provide the name and location of Brazilian states and cities in an easy way with pagination option.",
+  "description": "Rest API developed to provide name and location of Brazilian states and cities in an easy way with pagination option.",
   "main": "./src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
