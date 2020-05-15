@@ -11,6 +11,7 @@ exports.show = async (request, response) => {
     {
       page,
       limit,
+      sort: { name: "asc" },
       select: "-createdAt -updatedAt -__v -cities -_id",
     }
   );

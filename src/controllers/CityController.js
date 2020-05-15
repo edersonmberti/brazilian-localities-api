@@ -12,7 +12,12 @@ exports.index = async (request, response) => {
 
   const cities = await City.paginate(
     { state },
-    { page, limit, select: "-createdAt -updatedAt -__v -_id -state" }
+    {
+      page,
+      limit,
+      sort: { name: "asc" },
+      select: "-createdAt -updatedAt -__v -_id -state",
+    }
   );
 
   response.status(200).send({ cities });
